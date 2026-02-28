@@ -68,7 +68,7 @@ const getNoticias = async () =>{
         <div class="container">
         <div class="card">
             <h2 class="card-title">${noticia.title}</h2>
-            <img src="${noticia.urlToImage}" class="card-img-top" alt="...">
+            <img src="${noticia.urlToImage}" class="card-img-top" alt="..." onerror="this.src='/img/imgnoencontrada.jpg'">
             <div class="card-body">
             <p class="card-text">${noticia.description}</p>
             <h5 class="card-text">${noticia.source.name}</h5>
